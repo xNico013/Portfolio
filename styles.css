@@ -21,21 +21,22 @@ header {
 
 header h1 {
     font-size: 2.5rem;
-    font-family: "Montserrat", sans-serif; /* Use Montserrat font for the title */
+    font-family: "Montserrat", sans-serif; 
 }
 
 header h2 {
-    font-size: 1.2rem; /* Adjust the font size */
-    font-family: "Montserrat", sans-serif; /* Use Montserrat font for the subtitle */
+    font-size: 1.2rem; 
+    font-family: "Montserrat", sans-serif; 
     font-weight: normal;
-    margin-top: 10px; /* Add a margin to the subtitle */
+    margin-top: 10px; 
+    padding-bottom: 20px;
 }
 
 #grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px; /* Reduce the gap between grid items */
-    padding: 0 20px; /* Reduce the horizontal padding */
+    gap: 20px;
+    padding: 20px;
 }
 
 .grid-item {
