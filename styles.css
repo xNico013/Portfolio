@@ -7,29 +7,35 @@ body {
     background-color: black;
     color: white;
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 200px;
 }
 
 header {
     text-align: center;
-    padding: 200px 0;
+    padding: 20px 0;
 }
 
 header h1 {
     font-size: 2.5rem;
-    font-family: "Montserrat", sans-serif; 
+    font-family: "Montserrat", sans-serif; /* Use Montserrat font for the title */
 }
 
 header h2 {
-    font-size: 1.5rem;
-    font-family: "Montserrat", sans-serif; 
+    font-size: 1.2rem; /* Adjust the font size */
+    font-family: "Montserrat", sans-serif; /* Use Montserrat font for the subtitle */
     font-weight: normal;
+    margin-top: 10px; /* Add a margin to the subtitle */
 }
 
 #grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    gap: 10px; /* Reduce the gap between grid items */
+    padding: 0 20px; /* Reduce the horizontal padding */
 }
 
 .grid-item {
