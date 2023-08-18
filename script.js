@@ -1,13 +1,11 @@
 const grid = document.getElementById("grid");
 
-// Example images and videos URLs
 const items = [
     "image1.jpg",
     "image2.jpg",
-    "video1.mp4",
     "image3.jpg",
+    "video1.mp4",
     "video2.mp4",
-    // Add more items here
 ];
 
 items.forEach(item => {
