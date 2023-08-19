@@ -4,7 +4,7 @@ const items = [
     "image1.jpg",
     "image2.jpg",
     "image3.jpg",
-    "video1.mp4",
+    "c:\Users\yanni\OneDrive\Desktop\Park Multi-Point Speaker System.mov",
     "video2.mp4",
 ];
 
