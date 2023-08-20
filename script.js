@@ -6,6 +6,10 @@ const items = [
     "image3.jpg",
     "video1.mp4", // Video file is in the same directory
     "video2.mp4",
+    "image4.jpg",
+    "image5.jpg",
+    "image6.jpg",
+    "image7.jpg",
 ];
 
 items.forEach(item => {
