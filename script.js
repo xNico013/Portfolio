@@ -4,7 +4,7 @@ const items = [
     "image1.jpg",
     "image2.jpg",
     "image3.jpg",
-    "c:\Users\yanni\OneDrive\Desktop\Park Multi-Point Speaker System.mov",
+    "video1.mp4", // Video file is in the same directory
     "video2.mp4",
 ];
 
