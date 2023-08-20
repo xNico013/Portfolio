@@ -1,7 +1,7 @@
 const grid = document.getElementById("grid");
 
 const items = [
-    "image1.jpg",
+    "Scripting.png",
     "image2.jpg",
     "image3.jpg",
     "video1.mp4", // Video file is in the same directory
