@@ -12,24 +12,6 @@ const items = [
     "image7.jpg",
 ];
 
-const cycleDuration = 20; // in seconds
-const itemDuration = cycleDuration * 1000 / items.length;
-let currentItemIndex = 0;
-
-function moveItems() {
-    const gridItems = grid.getElementsByClassName("grid-item");
-    const currentItem = gridItems[currentItemIndex];
-
-    currentItem.style.transform = "translateX(-100%)";
-
-    setTimeout(() => {
-        currentItem.style.transform = "translateX(0)";
-        currentItemIndex = (currentItemIndex + 1) % items.length;
-    }, itemDuration - 50); // 50ms buffer for smooth transition
-
-    currentItemIndex = (currentItemIndex + 1) % items.length;
-}
-
 items.forEach(item => {
     const gridItem = document.createElement("div");
     gridItem.classList.add("grid-item");
@@ -47,5 +29,3 @@ items.forEach(item => {
 
     grid.appendChild(gridItem);
 });
-
-setInterval(moveItems, itemDuration);
