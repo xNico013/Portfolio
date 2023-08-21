@@ -11,7 +11,9 @@ const items = [
     "image7.jpg",
 ];
 
-items.forEach(item => {
+let currentItemIndex = 0;
+
+function createGridItem(item) {
     const gridItem = document.createElement("div");
     gridItem.classList.add("grid-item");
 
@@ -26,14 +28,36 @@ items.forEach(item => {
         gridItem.appendChild(video);
     }
 
-    gridItem.addEventListener("transitionend", () => {
-        gridItem.style.transition = "none"; // Temporarily remove transition to reset position instantly
-        gridItem.style.transform = "translateX(100%)"; // Move item to the right side
-        setTimeout(() => {
-            gridItem.style.transition = ""; // Restore transition
-            gridItem.style.transform = "translateX(0)"; // Reset item position for the next cycle
-        }, 0);
+    return gridItem;
+}
+
+function animateGrid() {
+    const gridItems = Array.from(grid.getElementsByClassName("grid-item"));
+
+    // Remove the first item and add it to the end
+    const firstItem = gridItems.shift();
+    gridItems.push(firstItem);
+
+    // Apply animation to the grid items
+    gridItems.forEach((item, index) => {
+        item.style.transition = "none"; // Temporarily remove transition
+        item.style.transform = `translateX(-${100 * index}%)`; // Shift items to the left
     });
 
+    // Re-apply transition and reset positions
+    setTimeout(() => {
+        gridItems.forEach(item => {
+            item.style.transition = ""; // Restore transition
+            item.style.transform = "translateX(0)"; // Reset position
+        });
+    }, 0);
+}
+
+// Initialize grid items
+items.forEach(item => {
+    const gridItem = createGridItem(item);
     grid.appendChild(gridItem);
 });
+
+// Animate the grid
+setInterval(animateGrid, 3000); // Adjust the time interval as needed
