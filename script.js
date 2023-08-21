@@ -27,5 +27,14 @@ items.forEach(item => {
         gridItem.appendChild(video);
     }
 
+    // Add a listener for the "transitionend" event
+    gridItem.addEventListener("transitionend", () => {
+        // Move the item to the right side and reset its position
+        gridItem.style.transform = "translateX(100%)";
+        setTimeout(() => {
+            gridItem.style.transform = "translateX(0)";
+        }, 0);
+    });
+
     grid.appendChild(gridItem);
 });
