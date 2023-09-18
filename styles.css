@@ -153,4 +153,14 @@ h2 {
     margin-top: 0; /* Remove default margin for h2 */
 }
 
+#sphere {
+    background-color: #222;
+    padding: 20px;
+}
+
+#sphereCanvas {
+    display: block;
+    margin: 0 auto;
+    background-color: transparent;
+}
 
