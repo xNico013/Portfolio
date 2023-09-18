@@ -38,9 +38,9 @@ const canvas = document.getElementById("sphereCanvas");
 const ctx = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
-canvas.height = 600;
+canvas.height = 300;
 
-const sphereRadius = 180;
+const sphereRadius = 80;
 const sphereCenterX = canvas.width / 2;
 const sphereCenterY = canvas.height / 2;
 const dotCount = 300;
@@ -58,11 +58,16 @@ function drawDot(x, y) {
 }
 
 function getRandomSphereCoordinates() {
-    const angle = Math.random() * Math.PI * 2;
-    const radius = Math.sqrt(Math.random()) * sphereRadius;
-    const x = sphereCenterX + radius * Math.cos(angle);
-    const y = sphereCenterY + radius * Math.sin(angle);
-    return { x, y, dx: (Math.random() - 0.5) * maxSpeed, dy: (Math.random() - 0.5) * maxSpeed };
+    const u = Math.random() * 2 - 1; // Random number between -1 and 1
+    const theta = Math.random() * Math.PI * 2; // Random angle between 0 and 2*PI
+
+    const x = sphereCenterX + sphereRadius * Math.sqrt(1 - u * u) * Math.cos(theta);
+    const y = sphereCenterY + sphereRadius * Math.sqrt(1 - u * u) * Math.sin(theta);
+    
+    const dx = (Math.random() - 0.5) * maxSpeed;
+    const dy = (Math.random() - 0.5) * maxSpeed;
+
+    return { x, y, dx, dy };
 }
 
 for (let i = 0; i < dotCount; i++) {
@@ -78,12 +83,10 @@ function animate() {
         dot.x += dot.dx;
         dot.y += dot.dy;
 
-        // Constrain dots within the sphere
+        // Keep dots within the sphere
         const distanceToCenter = Math.sqrt((dot.x - sphereCenterX) ** 2 + (dot.y - sphereCenterY) ** 2);
         if (distanceToCenter > sphereRadius) {
-            // Calculate angle between current position and the center
             const angle = Math.atan2(dot.y - sphereCenterY, dot.x - sphereCenterX);
-            // Move dot back to the sphere boundary
             dot.x = sphereCenterX + sphereRadius * Math.cos(angle);
             dot.y = sphereCenterY + sphereRadius * Math.sin(angle);
         }
@@ -91,5 +94,6 @@ function animate() {
 }
 
 animate();
+
 
 
