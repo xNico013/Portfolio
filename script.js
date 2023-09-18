@@ -38,9 +38,9 @@ const canvas = document.getElementById("sphereCanvas");
 const ctx = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
-canvas.height = 300;
+canvas.height = 600;
 
-const sphereRadius = 80;
+const sphereRadius = 200;
 const sphereCenterX = canvas.width / 2;
 const sphereCenterY = canvas.height / 2;
 const dotCount = 300;
@@ -96,11 +96,13 @@ function animate() {
         // Check if the dot hits the sphere's border
         const distanceToCenter = Math.sqrt((dot.x - sphereCenterX) ** 2 + (dot.y - sphereCenterY) ** 2);
         if (distanceToCenter > sphereRadius) {
-            // Bounce off the sphere's border with a new random direction and speed
-            const newDirection = getRandomDirection();
-            const newSpeed = Math.random() * maxSpeed;
-            dot.dx = newSpeed * Math.cos(newDirection);
-            dot.dy = newSpeed * Math.sin(newDirection);
+            // Bounce off the sphere's border
+            const angle = Math.atan2(dot.y - sphereCenterY, dot.x - sphereCenterX);
+            dot.dx *= -1; // Reverse the horizontal velocity
+            dot.dy *= -1; // Reverse the vertical velocity
+            // Move dot back to the sphere's border
+            dot.x = sphereCenterX + sphereRadius * Math.cos(angle);
+            dot.y = sphereCenterY + sphereRadius * Math.sin(angle);
         }
     }
 }
