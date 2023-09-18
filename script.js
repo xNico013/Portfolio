@@ -43,7 +43,7 @@ canvas.height = 600;
 const sphereRadius = 180;
 const sphereCenterX = canvas.width / 2;
 const sphereCenterY = canvas.height / 2;
-const dotCount = 25;
+const dotCount = 10;
 const dotRadius = 2;
 const lineColor = "#fff";
 
