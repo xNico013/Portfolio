@@ -142,7 +142,6 @@ header h2 {
     max-width: 100%;
     height: auto;
     display: block;
-    border-radius: 50%; /* Make the image round (optional) */
 }
 
 .info-text {
