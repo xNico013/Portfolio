@@ -4,7 +4,7 @@ const items = [
     "Scripting.png",
     "image2.jpg",
     "image3.jpg",
-    "video1.mp4", // Video file is in the same directory
+    "Smooth First Person System.mp4", // Video file is in the same directory
     "video2.mp4",
     "image4.jpg",
     "image5.jpg",
