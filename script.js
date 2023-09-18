@@ -83,10 +83,13 @@ function animate() {
         dot.x += dot.dx;
         dot.y += dot.dy;
 
-        // Keep dots within the sphere
+        // Bounce off the sphere's border
         const distanceToCenter = Math.sqrt((dot.x - sphereCenterX) ** 2 + (dot.y - sphereCenterY) ** 2);
         if (distanceToCenter > sphereRadius) {
             const angle = Math.atan2(dot.y - sphereCenterY, dot.x - sphereCenterX);
+            dot.dx *= -1; // Reverse the horizontal velocity
+            dot.dy *= -1; // Reverse the vertical velocity
+            // Move dot back to the sphere's border
             dot.x = sphereCenterX + sphereRadius * Math.cos(angle);
             dot.y = sphereCenterY + sphereRadius * Math.sin(angle);
         }
@@ -94,6 +97,3 @@ function animate() {
 }
 
 animate();
-
-
-
