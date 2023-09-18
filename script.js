@@ -38,9 +38,9 @@ const canvas = document.getElementById("sphereCanvas");
 const ctx = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
-canvas.height = 300;
+canvas.height = 600;
 
-const sphereRadius = 80;
+const sphereRadius = 180;
 const sphereCenterX = canvas.width / 2;
 const sphereCenterY = canvas.height / 2;
 const dotCount = 300;
@@ -78,15 +78,18 @@ function animate() {
         dot.x += dot.dx;
         dot.y += dot.dy;
 
-        // Bounce off the edges
-        if (dot.x < 0 || dot.x > canvas.width) {
-            dot.dx *= -1;
-        }
-        if (dot.y < 0 || dot.y > canvas.height) {
-            dot.dy *= -1;
+        // Constrain dots within the sphere
+        const distanceToCenter = Math.sqrt((dot.x - sphereCenterX) ** 2 + (dot.y - sphereCenterY) ** 2);
+        if (distanceToCenter > sphereRadius) {
+            // Calculate angle between current position and the center
+            const angle = Math.atan2(dot.y - sphereCenterY, dot.x - sphereCenterX);
+            // Move dot back to the sphere boundary
+            dot.x = sphereCenterX + sphereRadius * Math.cos(angle);
+            dot.y = sphereCenterY + sphereRadius * Math.sin(angle);
         }
     }
 }
 
 animate();
+
 
