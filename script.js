@@ -46,6 +46,9 @@ const sphereCenterY = canvas.height / 2;
 const dotCount = 300;
 const dotRadius = 2;
 const dotColor = "#fff";
+const maxSpeed = 1;
+
+const dots = [];
 
 function drawDot(x, y) {
     ctx.beginPath();
@@ -59,11 +62,31 @@ function getRandomSphereCoordinates() {
     const radius = Math.sqrt(Math.random()) * sphereRadius;
     const x = sphereCenterX + radius * Math.cos(angle);
     const y = sphereCenterY + radius * Math.sin(angle);
-    return { x, y };
+    return { x, y, dx: (Math.random() - 0.5) * maxSpeed, dy: (Math.random() - 0.5) * maxSpeed };
 }
 
 for (let i = 0; i < dotCount; i++) {
-    const dot = getRandomSphereCoordinates();
-    drawDot(dot.x, dot.y);
+    dots.push(getRandomSphereCoordinates());
 }
+
+function animate() {
+    requestAnimationFrame(animate);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    for (const dot of dots) {
+        drawDot(dot.x, dot.y);
+        dot.x += dot.dx;
+        dot.y += dot.dy;
+
+        // Bounce off the edges
+        if (dot.x < 0 || dot.x > canvas.width) {
+            dot.dx *= -1;
+        }
+        if (dot.y < 0 || dot.y > canvas.height) {
+            dot.dy *= -1;
+        }
+    }
+}
+
+animate();
 
