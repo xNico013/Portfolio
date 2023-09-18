@@ -31,3 +31,54 @@ items.forEach(item => {
 });
 
 
+// Get the canvas element and its 2d rendering context
+const canvas = document.getElementById("sphereCanvas");
+const ctx = canvas.getContext("2d");
+
+// Set canvas size
+canvas.width = window.innerWidth;
+canvas.height = 300;
+
+// Sphere parameters
+const sphereRadius = 80;
+const sphereCenterX = canvas.width / 2;
+const sphereCenterY = canvas.height / 2;
+const dotCount = 300;
+const dotRadius = 2;
+const lineColor = "#fff";
+
+// Function to draw a dot
+function drawDot(x, y) {
+    ctx.beginPath();
+    ctx.arc(x, y, dotRadius, 0, Math.PI * 2);
+    ctx.fillStyle = lineColor;
+    ctx.fill();
+}
+
+// Function to draw a line between two dots
+function drawLine(dot1, dot2) {
+    ctx.beginPath();
+    ctx.moveTo(dot1.x, dot1.y);
+    ctx.lineTo(dot2.x, dot2.y);
+    ctx.strokeStyle = lineColor;
+    ctx.stroke();
+}
+
+// Function to generate random coordinates within the sphere
+function getRandomSphereCoordinates() {
+    const angle = Math.random() * Math.PI * 2;
+    const radius = Math.sqrt(Math.random()) * sphereRadius;
+    const x = sphereCenterX + radius * Math.cos(angle);
+    const y = sphereCenterY + radius * Math.sin(angle);
+    return { x, y };
+}
+
+// Draw the sphere
+for (let i = 0; i < dotCount; i++) {
+    const dot = getRandomSphereCoordinates();
+    drawDot(dot.x, dot.y);
+    for (let j = i + 1; j < dotCount; j++) {
+        const nextDot = getRandomSphereCoordinates();
+        drawLine(dot, nextDot);
+    }
+}
