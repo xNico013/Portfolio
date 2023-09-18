@@ -38,9 +38,9 @@ const canvas = document.getElementById("sphereCanvas");
 const ctx = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
-canvas.height = 300;
+canvas.height = 600;
 
-const sphereRadius = 80;
+const sphereRadius = 200;
 const sphereCenterX = canvas.width / 2;
 const sphereCenterY = canvas.height / 2;
 const dotCount = 300;
