@@ -123,3 +123,35 @@ header h2 {
     overflow: hidden; /* To hide overflowing content */
 }
 
+#info {
+    background-color: #f0f0f0; /* Set your desired background color */
+    padding: 20px;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+}
+
+.info-image {
+    flex: 1;
+    padding-right: 20px; /* Add some spacing between the image and text */
+}
+
+.info-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50%; /* Make the image round (optional) */
+}
+
+.info-text {
+    flex: 2;
+}
+
+h2 {
+    font-size: 24px; /* Set your desired font size for the header */
+    margin-top: 0; /* Remove default margin for h2 */
+}
+
+
