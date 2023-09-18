@@ -40,10 +40,10 @@ canvas.width = window.innerWidth;
 canvas.height = 300;
 
 // Sphere parameters
-const sphereRadius = 80;
+const sphereRadius = 180;
 const sphereCenterX = canvas.width / 2;
 const sphereCenterY = canvas.height / 2;
-const dotCount = 300;
+const dotCount = 100;
 const dotRadius = 2;
 const lineColor = "#fff";
 
