@@ -37,13 +37,13 @@ const ctx = canvas.getContext("2d");
 
 // Set canvas size
 canvas.width = window.innerWidth;
-canvas.height = 300;
+canvas.height = 600;
 
 // Sphere parameters
 const sphereRadius = 180;
 const sphereCenterX = canvas.width / 2;
 const sphereCenterY = canvas.height / 2;
-const dotCount = 100;
+const dotCount = 25;
 const dotRadius = 2;
 const lineColor = "#fff";
 
