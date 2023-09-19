@@ -133,6 +133,7 @@ header h2 {
 .info-container {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .info-image {
