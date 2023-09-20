@@ -178,7 +178,7 @@ h2 {
 #hire {
     text-align: center;
     padding: 40px;
-    background-color: #1c1c1c;
+    background-color: #121212;
 }
 
 #hire h2 {
@@ -196,13 +196,13 @@ h2 {
 
 .contact-icons a {
     text-decoration: none;
-    color: #333;
+    color: white;
     margin: 0 20px;
     margin-bottom: 30px;
 }
 
 .contact-icons img {
-    width: 100px; /* Adjust the image size as needed */
+    width: 400px; /* Adjust the image size as needed */
 }
 
 .contact-icons p {
