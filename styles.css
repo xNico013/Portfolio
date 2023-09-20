@@ -97,15 +97,6 @@ header h2 {
 }
 
 
-@keyframes spin {
-    from {
-        transform: translateX(0%);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
-
 #grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
