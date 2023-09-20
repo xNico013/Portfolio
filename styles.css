@@ -171,7 +171,7 @@ h2 {
 #hire {
     text-align: center;
     padding: 40px;
-    background-color: #f0f0f0;
+    background-color: #1c1c1c;
 }
 
 #hire h2 {
@@ -202,5 +202,5 @@ h2 {
 }
 
 .contact-icons a:hover {
-    color: #007bff; /* Change color on hover */
+    color: #7c00db; /* Change color on hover */
 }
