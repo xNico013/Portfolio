@@ -202,11 +202,11 @@ h2 {
 }
 
 .contact-icons img {
-    width: 10px; /* Adjust the image size as needed */
+    width: 100px; /* Adjust the image size as needed */
 }
 
 .contact-icons p {
-    margin-top: 100px;
+    margin-top: 10px;
     font-weight: bold;
 }
 
