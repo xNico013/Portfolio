@@ -236,10 +236,9 @@ h2 {
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
-    flex-direction: column; /* Stack video and controls vertically */
     align-items: center;
     justify-content: center;
-    padding-top: 60px; /* Corrected property */
+    flex-wrap: wrap;
 }
 
 .video-controls {
@@ -247,10 +246,23 @@ h2 {
     align-items: center;
     justify-content: center;
     margin: 10px;
+    flex: 1; /* Distribute available space equally among controls */
+}
+
+button {
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    color: #007bff;
 }
 
 .video-player {
-    width: 100%; /* Make the video container full-width */
+    flex: 3; /* Allow video to take up more space */
     text-align: center; /* Center the video horizontally */
 }
 
@@ -260,16 +272,3 @@ iframe {
     max-width: 100%; /* Ensure the video doesn't exceed the container */
 }
 
-
-button {
-    font-size: 24px;
-    background-color: transparent;
-    color: white;
-    border: none;
-    cursor: pointer;
-    outline: none;
-}
-
-button:hover {
-    color: #7c00db;
-}
