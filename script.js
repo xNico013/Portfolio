@@ -109,3 +109,29 @@ function animate() {
 
 animate();
 
+
+const videoIds = ["VIDEO_ID_1", "VIDEO_ID_2", "VIDEO_ID_3"]; // Replace with your video IDs
+let currentVideoIndex = 0;
+
+const youtubeIframe = document.getElementById("youtube-iframe");
+const prevButton = document.getElementById("prev-video");
+const nextButton = document.getElementById("next-video");
+
+function loadVideo(index) {
+    const videoId = videoIds[index];
+    youtubeIframe.src = `https://www.youtube.com/embed/${videoId}`;
+}
+
+prevButton.addEventListener("click", () => {
+    currentVideoIndex = (currentVideoIndex - 1 + videoIds.length) % videoIds.length;
+    loadVideo(currentVideoIndex);
+});
+
+nextButton.addEventListener("click", () => {
+    currentVideoIndex = (currentVideoIndex + 1) % videoIds.length;
+    loadVideo(currentVideoIndex);
+});
+
+// Load the initial video
+loadVideo(currentVideoIndex);
+
