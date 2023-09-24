@@ -148,8 +148,11 @@ header h2 {
     0% {
         transform: translate(0, 0) rotate(0deg);
     }
-    50% {
+    25% {
         transform: translate(0, -10px) rotate(10deg);
+    }
+    75% {
+        transform: translate(0, 10px) rotate(-10deg);
     }
     100% {
         transform: translate(0, 0) rotate(0deg);
