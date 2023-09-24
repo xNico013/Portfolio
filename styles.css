@@ -139,6 +139,24 @@ header h2 {
     display: block;
 }
 
+
+.info-image img {
+    animation: floatAndRotate 5s ease-in-out infinite alternate;
+}
+
+@keyframes floatAndRotate {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+        transform: translate(0, -10px) rotate(10deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+
 .info-text {
     flex: 0.5;
 }
