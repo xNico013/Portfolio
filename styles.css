@@ -234,6 +234,43 @@ h2 {
     padding: 40px;
 }
 
+#social-media {
+    text-align: center;
+    padding: 40px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.video-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+button {
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    color: #007bff;
+}
+
 h2 {
     font-size: 24px;
 }
