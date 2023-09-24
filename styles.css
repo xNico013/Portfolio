@@ -234,12 +234,12 @@ h2 {
 
 .video-container {
     max-width: 1400px;
-    padding-top: 60px:
     margin: 0 auto;
     display: flex;
+    flex-direction: column; /* Stack video and controls vertically */
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    padding-top: 60px; /* Corrected property */
 }
 
 .video-controls {
@@ -248,6 +248,18 @@ h2 {
     justify-content: center;
     margin: 10px;
 }
+
+.video-player {
+    width: 100%; /* Make the video container full-width */
+    text-align: center; /* Center the video horizontally */
+}
+
+iframe {
+    width: 800px; /* Adjust the width to make the video bigger */
+    height: 450px; /* Adjust the height to maintain the aspect ratio */
+    max-width: 100%; /* Ensure the video doesn't exceed the container */
+}
+
 
 button {
     font-size: 24px;
