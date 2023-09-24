@@ -159,15 +159,6 @@ header h2 {
     }
 }
 
-@keyframes floatUpAndDown {
-    0%, 100% {
-        transform: translateY(0) rotate(0deg);
-    }
-    50% {
-        transform: translateY(-10px) rotate(0deg);
-    }
-}
-
 .info-text {
     flex: 0.5;
 }
@@ -180,12 +171,15 @@ h2 {
 #sphere {
     background-color: black;
     padding: 20px;
+    text-align: center; /* Center the content horizontally */
 }
 
 #sphereCanvas {
     display: block;
     margin: 0 auto;
     background-color: transparent;
+    max-width: 100%; /* Ensure the canvas doesn't exceed its parent's width */
+    height: auto; /* Maintain the aspect ratio and prevent overflow */
 }
 
 #sphere h2 {
