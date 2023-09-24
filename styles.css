@@ -4,8 +4,8 @@ body, h1, h2, p {
 }
 
 body {
-    background-color: white;
-    color: white;
+    background-color: black;
+    color: black;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
