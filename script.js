@@ -110,7 +110,7 @@ function animate() {
 animate();
 
 
-const videoIds = ["VIDEO_ID_1", "VIDEO_ID_2", "VIDEO_ID_3"]; // Replace with your video IDs
+const videoIds = ["BrfoYZQSwTw", "RsaOvQVFYKI", "MthZZEg_pek"]; // Replace with your video IDs
 let currentVideoIndex = 0;
 
 const youtubeIframe = document.getElementById("youtube-iframe");
