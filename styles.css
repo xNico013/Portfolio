@@ -257,6 +257,7 @@ h2 {
 button {
     font-size: 24px;
     background-color: transparent;
+    color: white;
     border: none;
     cursor: pointer;
     outline: none;
