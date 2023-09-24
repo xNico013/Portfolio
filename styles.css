@@ -146,16 +146,10 @@ header h2 {
 
 @keyframes floatAndRotate {
     0%, 100% {
-        transform: translate(0, 0) rotate(0deg);
+        transform: translate(0, 10) rotate(-10deg);
     }
-    25% {
+    100% {
         transform: translate(0, -10px) rotate(10deg);
-    }
-    50% {
-        transform: translate(0, 0px) rotate(0deg);
-    }
-    75% {
-        transform: translate(0, 10px) rotate(-10deg);
     }
 }
 
@@ -239,7 +233,8 @@ h2 {
 }
 
 .video-container {
-    max-width: 800px;
+    max-width: 1400px;
+    padding-top: 60px:
     margin: 0 auto;
     display: flex;
     align-items: center;
