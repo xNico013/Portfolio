@@ -145,10 +145,10 @@ header h2 {
 }
 
 @keyframes floatAndRotate {
-    0% {
-        transform: translate(0, 30) rotate(-30deg);
+    0%, 100% {
+        transform: translate(0, 30px) rotate(-30deg);
     }
-    100% {
+    50% {
         transform: translate(0, -30px) rotate(30deg);
     }
 }
@@ -255,10 +255,11 @@ button {
     border: none;
     cursor: pointer;
     outline: none;
+    color: white;
 }
 
 button:hover {
-    color: #007bff;
+    color: #7c00db;
 }
 
 .video-player {
