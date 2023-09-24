@@ -146,10 +146,10 @@ header h2 {
 
 @keyframes floatAndRotate {
     0% {
-        transform: translate(0, 10) rotate(-10deg);
+        transform: translate(0, 30) rotate(-30deg);
     }
     100% {
-        transform: translate(0, -10px) rotate(10deg);
+        transform: translate(0, -30px) rotate(30deg);
     }
 }
 
