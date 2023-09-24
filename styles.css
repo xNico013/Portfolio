@@ -145,7 +145,7 @@ header h2 {
 }
 
 @keyframes floatAndRotate {
-    0% {
+    0%, 100% {
         transform: translate(0, 0) rotate(0deg);
     }
     25% {
@@ -153,9 +153,6 @@ header h2 {
     }
     75% {
         transform: translate(0, 10px) rotate(-10deg);
-    }
-    100% {
-        transform: translate(0, 0) rotate(0deg);
     }
 }
 
