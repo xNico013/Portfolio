@@ -5,7 +5,7 @@ const items = [
     "image2.jpg",
     "image3.jpg",
     "Smooth First Person System.mp4", // Video file is in the same directory
-    "video2.mp4",
+    "Mutli Speaker Sound System.mp4",
     "image4.jpg",
     "image5.jpg",
     "image6.jpg",
