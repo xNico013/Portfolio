@@ -156,6 +156,14 @@ header h2 {
     }
 }
 
+@keyframes floatUpAndDown {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-10px) rotate(0deg);
+    }
+}
 
 .info-text {
     flex: 0.5;
