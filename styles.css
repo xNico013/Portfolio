@@ -4,7 +4,7 @@ body, h1, h2, p {
 }
 
 body {
-    background-color: black;
+    background-color: white;
     color: white;
     font-family: Arial, sans-serif;
     display: flex;
@@ -116,7 +116,7 @@ header h2 {
 }
 
 #info {
-    background-color: black;
+    background-color: white;
     padding: 20px;
     align-items: center;
 }
@@ -163,7 +163,7 @@ h2 {
 }
 
 #sphere {
-    background-color: black;
+    background-color: white;
     padding: 20px;
     text-align: center; /* Center the content horizontally */
 }
@@ -194,7 +194,7 @@ h2 {
     margin-bottom: 20px;
     text-align: center;
     margin-top: 30px;
-    color: black;
+    color: white;
 }
 
 .contact-icons {
@@ -205,7 +205,7 @@ h2 {
 
 .contact-icons a {
     text-decoration: none;
-    color: black;
+    color: white;
     margin: 0 20px;
     margin-bottom: 30px;
 }
