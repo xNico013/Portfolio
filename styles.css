@@ -239,6 +239,7 @@ h2 {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    padding-top: 60px; /* Corrected property */
 }
 
 .video-controls {
