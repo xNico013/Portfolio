@@ -45,7 +45,7 @@ const sphereCenterX = canvas.width / 2;
 const sphereCenterY = canvas.height / 2;
 const dotCount = 300;
 const dotRadius = 2;
-const dotColor = "#fff";
+const dotColor = "#000000";
 const maxSpeed = 1;
 
 const dots = [];
