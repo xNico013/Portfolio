@@ -140,7 +140,6 @@ header h2 {
 .info-image img {
     max-width: 60%;
     height: auto;
-    display: block;
 }
 
 
@@ -162,7 +161,7 @@ header h2 {
 }
 
 h2 {
-    font-size: 24px; /* Set your desired font size for the header */
+    font-size: 50px; /* Set your desired font size for the header */
     margin-top: 0; /* Remove default margin for h2 */
     color: white;
 }
