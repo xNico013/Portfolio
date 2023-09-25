@@ -2,10 +2,10 @@ const grid = document.getElementById("grid");
 
 const items = [
     "Scripting.png",
-    "Viewmodel.png",
-    "Viewmodel.png",
-    "Smooth First Person System.mp4", // Video file is in the same directory
-    "Mutli Speaker Sound System.mp4",
+    "Smooth First Person System.mp4",
+    "Viewmodel 2.png",
+    "Mutli Speaker Sound System.mp4", // Video file is in the same directory
+    "image3.jpg",
     "image4.jpg",
     "image5.jpg",
     "image6.jpg",
