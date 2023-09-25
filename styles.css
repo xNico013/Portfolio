@@ -106,6 +106,7 @@ header h2 {
     padding: 20px;
     animation: spin 20s linear infinite;
     overflow: hidden; /* To hide overflowing content */
+    background-color: black;
 }
 
 #grid2 {
@@ -115,6 +116,7 @@ header h2 {
     padding: 20px;
     animation: spin 20s linear infinite;
     overflow: hidden; /* To hide overflowing content */
+    background-color: black;
 }
 
 #info {
