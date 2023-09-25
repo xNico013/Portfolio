@@ -6,7 +6,6 @@ body, h1, h2, p {
 body {
     --tw-bg-opacity: 1;
     background-color: rgb(232 236 241/var(--tw-bg-opacity));
-    color: white;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
