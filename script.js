@@ -45,16 +45,25 @@ const sphereCenterX = canvas.width / 2;
 const sphereCenterY = canvas.height / 2;
 const dotCount = 300;
 const dotRadius = 2;
-const dotColor = "#000000";
+const dotColor = "#fff";
 const maxSpeed = 1;
 
 const dots = [];
+const lines = [];
 
 function drawDot(x, y) {
     ctx.beginPath();
     ctx.arc(x, y, dotRadius, 0, Math.PI * 2);
     ctx.fillStyle = dotColor;
     ctx.fill();
+}
+
+function drawLine(startX, startY, endX, endY) {
+    ctx.beginPath();
+    ctx.moveTo(startX, startY);
+    ctx.lineTo(endX, endY);
+    ctx.strokeStyle = dotColor;
+    ctx.stroke();
 }
 
 function getRandomVelocity() {
@@ -84,10 +93,37 @@ for (let i = 0; i < dotCount; i++) {
     dots.push(getRandomSphereCoordinates());
 }
 
+// Define 10 words and their positions
+const words = [
+    { text: "Word 1", x: 100, y: 100 },
+    { text: "Word 2", x: 200, y: 150 },
+    { text: "Word 3", x: 300, y: 200 },
+    { text: "Word 4", x: 400, y: 250 },
+    { text: "Word 5", x: 500, y: 300 },
+    { text: "Word 6", x: 600, y: 350 },
+    { text: "Word 7", x: 700, y: 400 },
+    { text: "Word 8", x: 800, y: 450 },
+    { text: "Word 9", x: 900, y: 500 },
+    { text: "Word 10", x: 1000, y: 550 },
+];
+
+// Create lines connecting dots to words
+for (let i = 0; i < 10; i++) {
+    lines.push({ dotIndex: i, wordIndex: i });
+}
+
 function animate() {
     requestAnimationFrame(animate);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+    // Draw lines connecting dots to words
+    for (const line of lines) {
+        const dot = dots[line.dotIndex];
+        const word = words[line.wordIndex];
+        drawLine(dot.x, dot.y, word.x, word.y);
+    }
+
+    // Draw dots
     for (const dot of dots) {
         drawDot(dot.x, dot.y);
         dot.x += dot.dx;
@@ -105,9 +141,19 @@ function animate() {
             dot.y = sphereCenterY + sphereRadius * Math.sin(angle);
         }
     }
+
+    // Draw words
+    for (const word of words) {
+        ctx.fillStyle = dotColor;
+        ctx.fillText(word.text, word.x, word.y);
+    }
 }
 
+// Start the animation
 animate();
+
+
+
 
 
 const videoIds = ["BrfoYZQSwTw", "RsaOvQVFYKI", "MthZZEg_pek"]; // Replace with your video IDs
