@@ -71,8 +71,6 @@ header {
 
 
 
-
-
 #starter {
     position: relative;
     background: url('Website.png') center/cover no-repeat;
@@ -80,12 +78,14 @@ header {
     overflow: hidden;
 }
 
+/* Apply a blur to the background of .starter-content */
 .starter-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100%;
     padding: 0 20px;
+    backdrop-filter: blur(10px); /* Apply a blur effect to the background */
 }
 
 .starter-text {
@@ -93,6 +93,8 @@ header {
     color: #fff;
     background: rgba(0, 0, 0, 0.6); /* Add a slight background overlay */
 }
+
+
 
 .starter-text h1 {
     font-size: 36px;
