@@ -19,7 +19,7 @@ header {
 
 #starter {
     position: relative;
-    background: url('background-image.jpg') center/cover no-repeat;
+    background: url('Website.png') center/cover no-repeat;
     height: 100vh;
     overflow: hidden;
 }
