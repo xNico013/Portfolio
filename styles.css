@@ -19,22 +19,9 @@ header {
 
 #starter {
     position: relative;
-    background: url('Website.png') center/cover no-repeat;
+    background: url('background-image.jpg') center/cover no-repeat;
     height: 100vh;
     overflow: hidden;
-}
-
-/* Apply a blur to the background */
-#starter::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: inherit;
-    filter: blur(10px); /* Adjust the blur amount as needed */
-    z-index: -1; /* Place it behind the content */
 }
 
 .starter-content {
@@ -87,7 +74,9 @@ header {
     flex: 1;
     height: 100%;
     background: url('big-image.jpg') center/cover no-repeat;
+    filter: blur(10px); /* Apply a slight blur to the image */
 }
+
 
 
 
