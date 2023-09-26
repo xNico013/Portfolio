@@ -19,9 +19,22 @@ header {
 
 #starter {
     position: relative;
-    background: url('picforwebsite3.png') center/cover no-repeat;
-    height: 43vh;
+    background: url('background-image.jpg') center/cover no-repeat;
+    height: 100vh;
     overflow: hidden;
+}
+
+/* Apply a blur to the background */
+#starter::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    filter: blur(10px); /* Adjust the blur amount as needed */
+    z-index: -1; /* Place it behind the content */
 }
 
 .starter-content {
@@ -33,6 +46,7 @@ header {
 }
 
 .starter-text {
+    flex: 1;
     padding: 20px;
     color: #fff;
     background: rgba(0, 0, 0, 0.6); /* Add a slight background overlay */
@@ -73,73 +87,8 @@ header {
     flex: 1;
     height: 100%;
     background: url('big-image.jpg') center/cover no-repeat;
-    filter: blur(10px); /* Apply a slight blur to the image */
 }
 
-
-.grid-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.grid-item img, .grid-item video {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-
-.menu {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1000;
-}
-
-.menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex; /* Display the menu items horizontally */
-}
-
-.menu li {
-    margin-right: 20px; /* Add spacing between menu items */
-    opacity: 0.7;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.menu li:hover {
-    opacity: 1;
-}
-
-.menu a {
-    text-decoration: none;
-    color: black;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    position: relative;
-}
-
-.menu a:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2px; /* Adjust the line's position */
-    width: 0;
-    height: 2px;
-    background-color: black;
-    transition: width 0.3s ease-in-out;
-}
-
-.menu a:hover:before {
-    width: 100%;
-}
 
 
 #grid {
