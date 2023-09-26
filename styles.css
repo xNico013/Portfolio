@@ -147,6 +147,21 @@ header {
 }
 
 
+/* Set a specific size for images inside grid items */
+.grid-item img {
+    max-width: 100%; /* Ensure images don't exceed the grid item width */
+    max-height: 100%; /* Ensure images don't exceed the grid item height */
+    width: 200px; /* Set the desired width for images */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+/* Set a specific size for videos inside grid items */
+.grid-item video {
+    max-width: 100%; /* Ensure videos don't exceed the grid item width */
+    max-height: 100%; /* Ensure videos don't exceed the grid item height */
+    width: 400px; /* Set the desired width for videos */
+    height: auto; /* Maintain the aspect ratio */
+}
 
 
 #grid2 {
