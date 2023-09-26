@@ -85,7 +85,6 @@ header {
     justify-content: space-between;
     height: 100%;
     padding: 0 20px;
-    backdrop-filter: blur(10px); /* Apply a blur effect to the background */
 }
 
 .starter-text {
