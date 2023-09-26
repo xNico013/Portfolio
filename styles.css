@@ -122,12 +122,13 @@ header {
     line-height: 4.25rem;
     text-transform: uppercase;
     margin: 0;
+    padding-bottom: 25px;
 }
 
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #F5CA46;
+    background-color: #9c38ff;
     color: #fff;
     text-decoration: none;
     font-size: 18px;
@@ -137,7 +138,7 @@ header {
 }
 
 .btn:hover {
-    background-color: #ffce38;
+    background-color: #9021ff;
 }
 
 .starter-image {
