@@ -148,7 +148,9 @@ header {
     filter: blur(10px); /* Apply a slight blur to the image */
 }
 
-
+#portfolio {
+    background-color: black;
+}
 
 
 #grid {
