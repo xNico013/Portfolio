@@ -149,11 +149,11 @@ header {
 }
 
 #portfolio {
-    background-color: black;
+    background-color: white;
 }
 
 #portfolio h2 {
-    color: #fff;
+    color: black;
     font-size: 4rem;
     font-weight: 700;
     font-family: Rajdhani,Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen-Sans,Ubuntu,Cantarell,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol;
@@ -172,7 +172,7 @@ header {
     padding: 20px;
     animation: spin 20s linear infinite;
     overflow: hidden; /* To hide overflowing content */
-    background-color: black;
+    background-color: white;
 }
 
 
@@ -214,7 +214,7 @@ header {
     padding: 20px;
     animation: spin 20s linear infinite;
     overflow: hidden; /* To hide overflowing content */
-    background-color: black;
+    background-color: white;
 }
 
 #info {
