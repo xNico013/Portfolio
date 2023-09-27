@@ -332,11 +332,12 @@ h2 {
 #social-media {
     text-align: center;
     padding: 40px;
+    background-color: black;
 }
 
 #social-media h2 {
     font-size: 50px;
-    color: black;
+    color: white;
 }
 
 .video-container {
@@ -363,7 +364,7 @@ button {
     border: none;
     cursor: pointer;
     outline: none;
-    color: black;
+    color: white;
 }
 
 button:hover {
