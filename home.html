@@ -1,0 +1,1692 @@
+<div>
+  <link href="./home.css" rel="stylesheet" />
+  <div class="home-container">
+    <nav class="navbar-navbar navbar-root-class-name">
+      <img
+        alt="Planical7012"
+        src="/planical7012-wzf.svg"
+        class="navbar-branding-logo"
+      />
+      <div class="navbar-nav-content">
+        <div class="navbar-nav-links">
+          <span class="navbar-link nav-link">Features</span>
+          <span class="nav-link">Why us</span>
+          <span class="nav-link">Prices</span>
+          <span class="nav-link">Contact</span>
+        </div>
+        <div class="get-started navbar-get-started">
+          <span class="navbar-text">Get started</span>
+        </div>
+        <div id="open-mobile-menu" class="navbar-hamburger get-started">
+          <img alt="image" src="/hamburger-200h.png" class="navbar-image" />
+        </div>
+      </div>
+      <div id="mobile-menu" class="navbar-mobile-menu">
+        <div class="navbar-branding">
+          <img alt="image" src="/planical7012-ttpb.svg" class="navbar-image1" />
+          <div id="close-mobile-menu" class="navbar-container">
+            <svg viewBox="0 0 1024 1024" class="navbar-icon">
+              <path
+                d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="navbar-nav-links1">
+          <span class="nav-link">Features</span>
+          <span class="nav-link">Why us</span>
+          <span class="nav-link">Prices</span>
+          <span class="nav-link">Contact</span>
+        </div>
+        <div class="get-started">
+          <span class="navbar-text1">Get started</span>
+        </div>
+      </div>
+      <div>
+        <div class="navbar-container2">
+          <script>
+                /*
+            Mobile menu - Code Embed
+            */
+
+            /* listenForUrlChangesMobileMenu() makes sure that if you changes pages inside your app,
+            the mobile menu will still work*/
+
+            const listenForUrlChangesMobileMenu = () => {
+                let url = location.href;
+                document.body.addEventListener('click', () => {
+                    requestAnimationFrame(() => {
+                        if (url !== location.href) {
+                            runMobileMenuCodeEmbed();
+                            url = location.href;
+                        }
+                    });
+                },
+                true
+                );
+            };
+
+            const runMobileMenuCodeEmbed = () => {
+                // Mobile menu
+                const mobileMenu = document.querySelector('#mobile-menu')
+
+                // Buttons
+                const closeButton = document.querySelector('#close-mobile-menu')
+                const openButton = document.querySelector('#open-mobile-menu')
+
+                // On openButton click, set the mobileMenu position left to -100vw
+                openButton && openButton.addEventListener('click', function() {
+                    mobileMenu.style.transform = 'translateX(0%)'
+                })
+
+                // On closeButton click, set the mobileMenu position to 0vw
+                closeButton && closeButton.addEventListener('click', function() {
+                    mobileMenu.style.transform = 'translateX(100%)'
+                })
+            }
+
+            runMobileMenuCodeEmbed()
+            listenForUrlChangesMobileMenu()
+          </script>
+        </div>
+      </div>
+    </nav>
+    <section class="home-section">
+      <div class="home-hero">
+        <div class="home-content">
+          <main class="home-main">
+            <header class="home-header">
+              <h1 class="home-heading">
+                The fastest way to make a doctor appointment
+              </h1>
+              <span class="home-caption">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </span>
+            </header>
+            <div class="home-buttons">
+              <div class="home-get-started button">
+                <span class="home-text">Get started</span>
+              </div>
+              <div class="home-get-started1 button">
+                <span class="home-text01">View features</span>
+              </div>
+            </div>
+          </main>
+          <div class="home-highlight">
+            <div class="home-avatars">
+              <img
+                alt="image"
+                src="https://images.unsplash.com/photo-1552234994-66ba234fd567?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDN8fHBvdHJhaXR8ZW58MHx8fHwxNjY3MjQ0ODcx&amp;ixlib=rb-4.0.3&amp;w=200"
+                class="home-image avatar"
+              />
+              <img
+                alt="image"
+                src="https://images.unsplash.com/photo-1610276198568-eb6d0ff53e48?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHBvdHJhaXR8ZW58MHx8fHwxNjY3MjQ0ODcx&amp;ixlib=rb-4.0.3&amp;w=200"
+                class="home-image01 avatar"
+              />
+              <img
+                alt="image"
+                src="https://images.unsplash.com/photo-1618151313441-bc79b11e5090?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEzfHxwb3RyYWl0fGVufDB8fHx8MTY2NzI0NDg3MQ&amp;ixlib=rb-4.0.3&amp;w=200"
+                class="home-image02 avatar"
+              />
+            </div>
+            <label class="home-caption1">
+              Loved by 10,000+ people like you.
+            </label>
+          </div>
+        </div>
+        <div class="home-image03">
+          <img alt="image" src="/heroimage-1500h.png" class="home-image04" />
+        </div>
+        <div class="home-image05">
+          <img alt="image" src="/heroimage-1500h.png" class="home-image06" />
+        </div>
+      </div>
+    </section>
+    <section class="home-section01">
+      <h2 class="home-text02">Our doctors and therapists are here, 24/7.</h2>
+      <div class="home-features">
+        <header class="feature feature-active home-feature">
+          <h3 class="home-text03">Urgent Care</h3>
+          <p class="home-text04">Doloremque laudantium</p>
+        </header>
+        <header class="feature home-feature1">
+          <h3 class="home-text05">Chronic Care</h3>
+          <p class="home-text06">Doloremque laudantium</p>
+        </header>
+        <header class="feature home-feature2">
+          <h3 class="home-text07">Mental Health</h3>
+          <p class="home-text08">Doloremque laudantium</p>
+        </header>
+      </div>
+      <div class="home-note">
+        <div class="home-content1">
+          <main class="home-main1">
+            <h2 class="home-heading01">
+              Accessing this Medicare benefit is easy
+            </h2>
+            <p class="home-paragraph">
+              <span>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae.
+              </span>
+              <br />
+              <br />
+              <span>
+                Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+                illo inventore veritatis et quasi architecto beatae.
+              </span>
+              <br />
+            </p>
+          </main>
+          <div class="home-explore-more">
+            <p class="home-text14">Explore more -&gt;</p>
+          </div>
+        </div>
+        <div class="home-image07">
+          <img alt="image" src="/group%201490-1200w.png" class="home-image08" />
+        </div>
+      </div>
+    </section>
+    <section class="home-section02">
+      <header class="home-header01">
+        <h2 class="home-text15">Why do you need a mobile medical app?</h2>
+        <span class="home-text16">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt.
+        </span>
+      </header>
+      <section class="home-note1">
+        <div class="home-image09">
+          <img alt="image" src="/group%201428-1200w.png" class="home-image10" />
+        </div>
+        <div class="home-content2">
+          <div class="home-main2">
+            <div class="home-caption2">
+              <span class="section-head">Tempor incididunt</span>
+            </div>
+            <div class="home-heading02">
+              <h2 class="section-heading">
+                We provide compassionate care from start to finish.
+              </h2>
+              <p class="section-description">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae.
+              </p>
+            </div>
+          </div>
+          <div class="home-get-started2 button">
+            <span class="home-text17">Get started</span>
+          </div>
+        </div>
+      </section>
+      <section class="home-note2">
+        <div class="home-image11">
+          <img alt="image" src="/group%201449-1200w.png" class="home-image12" />
+        </div>
+        <div class="home-content3">
+          <main class="home-main3">
+            <header class="home-caption3">
+              <span class="home-section04 section-head">Tempor incididunt</span>
+            </header>
+            <main class="home-heading04">
+              <header class="home-header02">
+                <h2 class="section-heading">Great care, wherever you are</h2>
+                <p class="section-description">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium.
+                </p>
+              </header>
+              <div class="home-checkmarks">
+                <div class="mark-mark">
+                  <div class="mark-icon">
+                    <svg viewBox="0 0 1024 1024" class="mark-icon1">
+                      <path
+                        d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <p class="mark-label">
+                    <span>Duis aute irure dolor in reprehenderit</span>
+                  </p>
+                </div>
+                <div class="mark-mark">
+                  <div class="mark-icon">
+                    <svg viewBox="0 0 1024 1024" class="mark-icon1">
+                      <path
+                        d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <p class="mark-label">
+                    <span>Quis nostrud exercitation ullamco</span>
+                  </p>
+                </div>
+                <div class="mark-mark">
+                  <div class="mark-icon">
+                    <svg viewBox="0 0 1024 1024" class="mark-icon1">
+                      <path
+                        d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <p class="mark-label">
+                    <span>Reprehenderit qui in ea voluptate velit</span>
+                  </p>
+                </div>
+              </div>
+            </main>
+          </main>
+          <div class="home-get-started3 button">
+            <span class="home-text18">Get started</span>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="home-section05">
+      <header class="home-header03">
+        <header class="home-left">
+          <span class="section-head">Tempor incididunt</span>
+          <h2 class="section-heading">
+            <span>Meet our network</span>
+            <br />
+            <span>of licensed providers</span>
+          </h2>
+        </header>
+        <div class="home-right">
+          <p class="home-paragraph3 section-description">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam.
+          </p>
+        </div>
+      </header>
+      <main class="home-cards">
+        <section class="card-card card-root-class-name">
+          <div class="card-icon">
+            <img alt="image" src="/group%201316-200w.png" class="card-icon1" />
+          </div>
+          <main class="card-content">
+            <h1 class="card-header"><span>Sima Mosbacher</span></h1>
+            <p class="card-description">
+              <span>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium
+              </span>
+            </p>
+          </main>
+        </section>
+        <section class="card-card card-root-class-name1">
+          <div class="card-icon">
+            <img alt="image" src="/group%201314-200h.png" class="card-icon1" />
+          </div>
+          <main class="card-content">
+            <h1 class="card-header"><span>Sima Mosbacher</span></h1>
+            <p class="card-description">
+              <span>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium
+              </span>
+            </p>
+          </main>
+        </section>
+        <section class="card-card card-root-class-name2">
+          <div class="card-icon">
+            <img alt="image" src="/group%201317-200h.png" class="card-icon1" />
+          </div>
+          <main class="card-content">
+            <h1 class="card-header"><span>Sima Mosbacher</span></h1>
+            <p class="card-description">
+              <span>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium
+              </span>
+            </p>
+          </main>
+        </section>
+      </main>
+    </section>
+    <section class="home-section07">
+      <div class="home-note3">
+        <div class="home-image13">
+          <img
+            alt="image"
+            src="/iphone%2014%20pro%20max-1200w.png"
+            class="home-image14"
+          />
+        </div>
+        <div class="home-content4">
+          <div class="home-caption4">
+            <span class="section-head">Tempor incididunt</span>
+          </div>
+          <div class="home-heading07">
+            <div class="home-header04">
+              <h2 class="section-heading">
+                Tips to get care, answers and advice faster
+              </h2>
+            </div>
+            <div class="accordion-accordion accordion-root-class-name">
+              <div data-role="accordion-container" class="accordion-element">
+                <div class="accordion-details">
+                  <span class="accordion-text">
+                    <span>Aliquam quaerat voluptatem</span>
+                  </span>
+                  <span data-role="accordion-content" class="accordion-text1">
+                    <span>
+                      Sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliquat enim ad minim veniam, quis nostrud
+                    </span>
+                  </span>
+                </div>
+                <svg
+                  viewBox="0 0 1024 1024"
+                  data-role="accordion-icon"
+                  class="accordion-icon"
+                >
+                  <path
+                    d="M366 708l196-196-196-196 60-60 256 256-256 256z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                data-role="accordion-container"
+                class="accordion-element1 accordion-element"
+              >
+                <div class="accordion-details1">
+                  <span class="accordion-text2">
+                    <span>Nemo enim ipsam voluptatem quia voluptas</span>
+                  </span>
+                  <span data-role="accordion-content" class="accordion-text3">
+                    <span>
+                      Sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliquat enim ad minim veniam, quis nostrud
+                    </span>
+                  </span>
+                </div>
+                <svg
+                  viewBox="0 0 1024 1024"
+                  data-role="accordion-icon"
+                  class="accordion-icon2"
+                >
+                  <path
+                    d="M366 708l196-196-196-196 60-60 256 256-256 256z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                data-role="accordion-container"
+                class="accordion-element2 accordion-element"
+              >
+                <div class="accordion-details2">
+                  <span class="accordion-text4">
+                    <span>Magnam aliquam quaerat voluptatem</span>
+                  </span>
+                  <span data-role="accordion-content" class="accordion-text5">
+                    <span>
+                      Sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliquat enim ad minim veniam, quis nostrud
+                    </span>
+                  </span>
+                </div>
+                <svg
+                  viewBox="0 0 1024 1024"
+                  data-role="accordion-icon"
+                  class="accordion-icon4"
+                >
+                  <path
+                    d="M366 708l196-196-196-196 60-60 256 256-256 256z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="home-section09">
+      <div class="home-cube">
+        <div class="home-top side"></div>
+        <div class="home-front side"></div>
+        <div class="home-left1 side"></div>
+      </div>
+      <main class="home-banner">
+        <div class="home-header05">
+          <h2 class="section-heading">
+            Planical makes online doctor visits easier
+          </h2>
+          <p class="home-description section-description">
+            Lorem ipsum dolor sit amet!
+          </p>
+        </div>
+        <div class="home-buttons1">
+          <div class="home-get-started4 button">
+            <span class="home-text22">Get started</span>
+          </div>
+          <div class="home-book-demo button">
+            <span class="home-text23">Book a demo</span>
+          </div>
+        </div>
+      </main>
+    </section>
+    <section class="home-section10">
+      <div class="home-cube1">
+        <div class="home-top1 side"></div>
+        <div class="home-front1 side"></div>
+        <div class="home-left2 side"></div>
+      </div>
+      <main class="home-pricing">
+        <header class="home-header06">
+          <header class="home-left3">
+            <span class="section-head">Pricing</span>
+            <h2 class="section-heading home-heading10">
+              Start small, think big
+            </h2>
+          </header>
+          <div class="home-right1">
+            <p class="home-paragraph4 section-description">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam.
+            </p>
+          </div>
+        </header>
+        <div class="home-plans-container">
+          <div class="home-switch">
+            <div class="switch"><label class="home-text24">Monthly</label></div>
+            <div class="home-switch2 switch">
+              <label class="home-text25">Yearly</label>
+            </div>
+          </div>
+          <main class="home-plans">
+            <div class="home-plan">
+              <div class="home-details">
+                <div class="home-header07">
+                  <label class="home-name">Basic</label>
+                  <div class="home-pricing1">
+                    <h1 class="home-price">$9</h1>
+                    <span class="home-duration">/mo</span>
+                  </div>
+                </div>
+                <p class="home-description1">
+                  Good for sed quia consequuntur magni dolores eos qui ratione.
+                </p>
+              </div>
+              <div class="home-buy-details">
+                <div class="home-buy button">
+                  <span class="home-text26">
+                    <span>Start Basic</span>
+                    <br />
+                  </span>
+                </div>
+                <div class="home-features1">
+                  <span class="home-heading11">You will get</span>
+                  <div class="home-list">
+                    <div class="includes-mark includes-root-class-name">
+                      <div class="includes-icon">
+                        <svg viewBox="0 0 1024 1024" class="includes-icon1">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="includes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                    <div class="includes-mark includes-root-class-name">
+                      <div class="includes-icon">
+                        <svg viewBox="0 0 1024 1024" class="includes-icon1">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="includes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                    <div class="includes-mark includes-root-class-name">
+                      <div class="includes-icon">
+                        <svg viewBox="0 0 1024 1024" class="includes-icon1">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="includes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                    <div class="includes-mark includes-root-class-name">
+                      <div class="includes-icon">
+                        <svg viewBox="0 0 1024 1024" class="includes-icon1">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="includes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                    <div class="excludes-mark excludes-root-class-name">
+                      <div class="excludes-icon">
+                        <svg viewBox="0 0 1024 1024" class="excludes-icon1">
+                          <path
+                            d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="excludes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                    <div class="excludes-mark excludes-root-class-name">
+                      <div class="excludes-icon">
+                        <svg viewBox="0 0 1024 1024" class="excludes-icon1">
+                          <path
+                            d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="excludes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                    <div class="excludes-mark excludes-root-class-name">
+                      <div class="excludes-icon">
+                        <svg viewBox="0 0 1024 1024" class="excludes-icon1">
+                          <path
+                            d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="excludes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                    <div class="excludes-mark excludes-root-class-name">
+                      <div class="excludes-icon">
+                        <svg viewBox="0 0 1024 1024" class="excludes-icon1">
+                          <path
+                            d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="excludes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                    <div class="excludes-mark excludes-root-class-name">
+                      <div class="excludes-icon">
+                        <svg viewBox="0 0 1024 1024" class="excludes-icon1">
+                          <path
+                            d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="excludes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                    <div class="excludes-mark excludes-root-class-name">
+                      <div class="excludes-icon">
+                        <svg viewBox="0 0 1024 1024" class="excludes-icon1">
+                          <path
+                            d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="excludes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-plan1">
+              <div class="home-details1">
+                <div class="home-header08">
+                  <label class="home-name1">Professional</label>
+                  <div class="home-pricing2">
+                    <h1 class="home-price1">$15</h1>
+                    <span class="home-duration1">/mo</span>
+                  </div>
+                </div>
+                <p class="home-description2">
+                  Good for sed quia consequuntur magni dolores eos qui ratione.
+                </p>
+              </div>
+              <div class="home-buy-details1">
+                <div class="home-buy1 button">
+                  <span class="home-text29">
+                    <span>Start Professional</span>
+                    <br />
+                  </span>
+                </div>
+                <div class="home-features2">
+                  <span class="home-heading12">You will get</span>
+                  <div class="home-list1">
+                    <div class="includes-mark includes-root-class-name">
+                      <div class="includes-icon">
+                        <svg viewBox="0 0 1024 1024" class="includes-icon1">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="includes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                    <div class="includes-mark includes-root-class-name">
+                      <div class="includes-icon">
+                        <svg viewBox="0 0 1024 1024" class="includes-icon1">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="includes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                    <div class="includes-mark includes-root-class-name">
+                      <div class="includes-icon">
+                        <svg viewBox="0 0 1024 1024" class="includes-icon1">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="includes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                    <div class="includes-mark includes-root-class-name">
+                      <div class="includes-icon">
+                        <svg viewBox="0 0 1024 1024" class="includes-icon1">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="includes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                    <div class="includes-mark includes-root-class-name">
+                      <div class="includes-icon">
+                        <svg viewBox="0 0 1024 1024" class="includes-icon1">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="includes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                    <div class="includes-mark includes-root-class-name">
+                      <div class="includes-icon">
+                        <svg viewBox="0 0 1024 1024" class="includes-icon1">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="includes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                    <div class="includes-mark includes-root-class-name">
+                      <div class="includes-icon">
+                        <svg viewBox="0 0 1024 1024" class="includes-icon1">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="includes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                    <div class="excludes-mark excludes-root-class-name">
+                      <div class="excludes-icon">
+                        <svg viewBox="0 0 1024 1024" class="excludes-icon1">
+                          <path
+                            d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="excludes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                    <div class="excludes-mark excludes-root-class-name">
+                      <div class="excludes-icon">
+                        <svg viewBox="0 0 1024 1024" class="excludes-icon1">
+                          <path
+                            d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="excludes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                    <div class="excludes-mark excludes-root-class-name">
+                      <div class="excludes-icon">
+                        <svg viewBox="0 0 1024 1024" class="excludes-icon1">
+                          <path
+                            d="M225.835 286.165l225.835 225.835-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l225.835-225.835 225.835 225.835c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331l-225.835-225.835 225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-225.835 225.835-225.835-225.835c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="excludes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-plan2">
+              <div class="home-details2">
+                <div class="home-header09">
+                  <label class="home-name2">Enterprise</label>
+                  <div class="home-pricing3">
+                    <span class="home-price2">$99</span>
+                    <span class="home-duration2">/mo</span>
+                  </div>
+                </div>
+                <p class="home-description3">
+                  Good for sed quia consequuntur magni dolores eos qui ratione.
+                </p>
+              </div>
+              <div class="home-buy-details2">
+                <div class="home-buy2 button">
+                  <span class="home-text32">
+                    <span>Start Enterprise</span>
+                    <br />
+                  </span>
+                </div>
+                <div class="home-features3">
+                  <span class="home-heading13">You will get</span>
+                  <div class="home-list2">
+                    <div class="includes-mark includes-root-class-name">
+                      <div class="includes-icon">
+                        <svg viewBox="0 0 1024 1024" class="includes-icon1">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="includes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                    <div class="includes-mark includes-root-class-name">
+                      <div class="includes-icon">
+                        <svg viewBox="0 0 1024 1024" class="includes-icon1">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="includes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                    <div class="includes-mark includes-root-class-name">
+                      <div class="includes-icon">
+                        <svg viewBox="0 0 1024 1024" class="includes-icon1">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="includes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                    <div class="includes-mark includes-root-class-name">
+                      <div class="includes-icon">
+                        <svg viewBox="0 0 1024 1024" class="includes-icon1">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="includes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                    <div class="includes-mark includes-root-class-name">
+                      <div class="includes-icon">
+                        <svg viewBox="0 0 1024 1024" class="includes-icon1">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="includes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                    <div class="includes-mark includes-root-class-name">
+                      <div class="includes-icon">
+                        <svg viewBox="0 0 1024 1024" class="includes-icon1">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="includes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                    <div class="includes-mark includes-root-class-name">
+                      <div class="includes-icon">
+                        <svg viewBox="0 0 1024 1024" class="includes-icon1">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="includes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                    <div class="includes-mark includes-root-class-name">
+                      <div class="includes-icon">
+                        <svg viewBox="0 0 1024 1024" class="includes-icon1">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="includes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                    <div class="includes-mark includes-root-class-name">
+                      <div class="includes-icon">
+                        <svg viewBox="0 0 1024 1024" class="includes-icon1">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="includes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                    <div class="includes-mark includes-root-class-name">
+                      <div class="includes-icon">
+                        <svg viewBox="0 0 1024 1024" class="includes-icon1">
+                          <path
+                            d="M384 690l452-452 60 60-512 512-238-238 60-60z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <label class="includes-label">
+                        <span>Sed ut pespiciatis unde omnis</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </main>
+      <div class="home-help">
+        <span class="home-text35">
+          <span>Need any help?</span>
+          <br />
+        </span>
+        <div class="home-contact-support">
+          <p class="home-text38">Contact support -&gt;</p>
+        </div>
+      </div>
+    </section>
+    <section class="home-section12">
+      <header class="home-header10">
+        <header class="home-left4">
+          <span class="section-head">Tempor incididunt</span>
+          <h2 class="home-heading14 section-heading">
+            What users say about us
+          </h2>
+        </header>
+        <div class="home-right2">
+          <p class="home-paragraph5 section-description">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam.
+          </p>
+        </div>
+      </header>
+      <main class="home-cards1">
+        <div class="home-container1">
+          <section class="review-card review-root-class-name">
+            <div class="review-stars">
+              <svg viewBox="0 0 1024 1024" class="review-icon">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path></svg
+              ><svg viewBox="0 0 1024 1024" class="review-icon02">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path></svg
+              ><svg viewBox="0 0 1024 1024" class="review-icon04">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path></svg
+              ><svg viewBox="0 0 1024 1024" class="review-icon06">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path></svg
+              ><svg viewBox="0 0 1024 1024" class="review-icon08">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path>
+              </svg>
+            </div>
+            <main class="review-content">
+              <p class="review-quote">
+                <span>
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor.”
+                </span>
+              </p>
+              <div class="review-author">
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1610276198568-eb6d0ff53e48?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHBvdHJhaXR8ZW58MHx8fHwxNjY3NzU5NDE3&ixlib=rb-4.0.3&w=200"
+                  class="review-avatar"
+                />
+                <div class="review-details">
+                  <h1 class="review-author1"><span>Sima Mosbacher</span></h1>
+                  <label class="review-position"><span>Manager</span></label>
+                </div>
+              </div>
+            </main>
+          </section>
+          <section class="review-card review-root-class-name">
+            <div class="review-stars">
+              <svg viewBox="0 0 1024 1024" class="review-icon">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path></svg
+              ><svg viewBox="0 0 1024 1024" class="review-icon02">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path></svg
+              ><svg viewBox="0 0 1024 1024" class="review-icon04">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path></svg
+              ><svg viewBox="0 0 1024 1024" class="review-icon06">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path></svg
+              ><svg viewBox="0 0 1024 1024" class="review-icon08">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path>
+              </svg>
+            </div>
+            <main class="review-content">
+              <p class="review-quote">
+                <span>
+                  “Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                  corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+                  consequatur.  Quis autem vel eum iure reprehenderit qui in ea
+                  voluptate velit esse quam nihil molestiae consequatur.”
+                </span>
+              </p>
+              <div class="review-author">
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1610276198568-eb6d0ff53e48?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHBvdHJhaXR8ZW58MHx8fHwxNjY3NzU5NDE3&ixlib=rb-4.0.3&w=200"
+                  class="review-avatar"
+                />
+                <div class="review-details">
+                  <h1 class="review-author1"><span>Sima Mosbacher</span></h1>
+                  <label class="review-position"><span>Manager</span></label>
+                </div>
+              </div>
+            </main>
+          </section>
+        </div>
+        <div class="home-container2">
+          <section class="review-card review-root-class-name">
+            <div class="review-stars">
+              <svg viewBox="0 0 1024 1024" class="review-icon">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path></svg
+              ><svg viewBox="0 0 1024 1024" class="review-icon02">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path></svg
+              ><svg viewBox="0 0 1024 1024" class="review-icon04">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path></svg
+              ><svg viewBox="0 0 1024 1024" class="review-icon06">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path></svg
+              ><svg viewBox="0 0 1024 1024" class="review-icon08">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path>
+              </svg>
+            </div>
+            <main class="review-content">
+              <p class="review-quote">
+                <span>
+                  “Illum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.”
+                </span>
+              </p>
+              <div class="review-author">
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1610276198568-eb6d0ff53e48?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHBvdHJhaXR8ZW58MHx8fHwxNjY3NzU5NDE3&ixlib=rb-4.0.3&w=200"
+                  class="review-avatar"
+                />
+                <div class="review-details">
+                  <h1 class="review-author1"><span>Sima Mosbacher</span></h1>
+                  <label class="review-position"><span>Manager</span></label>
+                </div>
+              </div>
+            </main>
+          </section>
+          <section class="review-card review-root-class-name">
+            <div class="review-stars">
+              <svg viewBox="0 0 1024 1024" class="review-icon">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path></svg
+              ><svg viewBox="0 0 1024 1024" class="review-icon02">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path></svg
+              ><svg viewBox="0 0 1024 1024" class="review-icon04">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path></svg
+              ><svg viewBox="0 0 1024 1024" class="review-icon06">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path></svg
+              ><svg viewBox="0 0 1024 1024" class="review-icon08">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path>
+              </svg>
+            </div>
+            <main class="review-content">
+              <p class="review-quote">
+                <span>
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor.”
+                </span>
+              </p>
+              <div class="review-author">
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1610276198568-eb6d0ff53e48?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHBvdHJhaXR8ZW58MHx8fHwxNjY3NzU5NDE3&ixlib=rb-4.0.3&w=200"
+                  class="review-avatar"
+                />
+                <div class="review-details">
+                  <h1 class="review-author1"><span>Sima Mosbacher</span></h1>
+                  <label class="review-position"><span>Manager</span></label>
+                </div>
+              </div>
+            </main>
+          </section>
+        </div>
+        <div class="home-container3">
+          <section class="review-card review-root-class-name">
+            <div class="review-stars">
+              <svg viewBox="0 0 1024 1024" class="review-icon">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path></svg
+              ><svg viewBox="0 0 1024 1024" class="review-icon02">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path></svg
+              ><svg viewBox="0 0 1024 1024" class="review-icon04">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path></svg
+              ><svg viewBox="0 0 1024 1024" class="review-icon06">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path></svg
+              ><svg viewBox="0 0 1024 1024" class="review-icon08">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path>
+              </svg>
+            </div>
+            <main class="review-content">
+              <p class="review-quote">
+                <span>
+                  “Sed ut perspiciatis unde omnis iste natus error sit
+                  voluptatem accusantium doloremque laudantium, totam rem
+                  aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                  architecto beatae.”
+                </span>
+              </p>
+              <div class="review-author">
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1610276198568-eb6d0ff53e48?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHBvdHJhaXR8ZW58MHx8fHwxNjY3NzU5NDE3&ixlib=rb-4.0.3&w=200"
+                  class="review-avatar"
+                />
+                <div class="review-details">
+                  <h1 class="review-author1"><span>Sima Mosbacher</span></h1>
+                  <label class="review-position"><span>Manager</span></label>
+                </div>
+              </div>
+            </main>
+          </section>
+          <section class="review-card review-root-class-name">
+            <div class="review-stars">
+              <svg viewBox="0 0 1024 1024" class="review-icon">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path></svg
+              ><svg viewBox="0 0 1024 1024" class="review-icon02">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path></svg
+              ><svg viewBox="0 0 1024 1024" class="review-icon04">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path></svg
+              ><svg viewBox="0 0 1024 1024" class="review-icon06">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path></svg
+              ><svg viewBox="0 0 1024 1024" class="review-icon08">
+                <path
+                  d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
+                ></path>
+              </svg>
+            </div>
+            <main class="review-content">
+              <p class="review-quote">
+                <span>
+                  “Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+                  illo inventore veritatis et quasi architecto beatae.”
+                </span>
+              </p>
+              <div class="review-author">
+                <img
+                  alt="image"
+                  src="https://images.unsplash.com/photo-1610276198568-eb6d0ff53e48?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHBvdHJhaXR8ZW58MHx8fHwxNjY3NzU5NDE3&ixlib=rb-4.0.3&w=200"
+                  class="review-avatar"
+                />
+                <div class="review-details">
+                  <h1 class="review-author1"><span>Sima Mosbacher</span></h1>
+                  <label class="review-position"><span>Manager</span></label>
+                </div>
+              </div>
+            </main>
+          </section>
+        </div>
+      </main>
+      <div class="home-view-more"><p class="home-text39">View more</p></div>
+    </section>
+    <section class="home-section14">
+      <header class="home-header11">
+        <span class="section-head">Articles about us</span>
+        <h2 class="home-heading15 section-heading">
+          We’re the app on everyone’s lips
+        </h2>
+      </header>
+      <main class="home-cards2">
+        <section class="article-card article-root-class-name">
+          <main class="article-content">
+            <header class="article-header">
+              <h1 class="article-header1"><span>TechCrunch</span></h1>
+            </header>
+            <p class="article-description">
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </span>
+            </p>
+            <div class="article-button">
+              <a
+                href
+                target="_blank"
+                rel="noreferrer noopener"
+                class="article-link"
+              >
+                <p class="article-text"><span>Read -></span></p>
+              </a>
+            </div>
+          </main>
+        </section>
+        <section class="article-card article-root-class-name">
+          <main class="article-content">
+            <header class="article-header">
+              <h1 class="article-header1"><span>techeu</span></h1>
+            </header>
+            <p class="article-description">
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </span>
+            </p>
+            <div class="article-button">
+              <a
+                href
+                target="_blank"
+                rel="noreferrer noopener"
+                class="article-link"
+              >
+                <p class="article-text"><span>Read -></span></p>
+              </a>
+            </div>
+          </main>
+        </section>
+        <section class="article-card article-root-class-name">
+          <main class="article-content">
+            <header class="article-header">
+              <h1 class="article-header1"><span>sifted/</span></h1>
+            </header>
+            <p class="article-description">
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor.
+              </span>
+            </p>
+            <div class="article-button">
+              <a
+                href
+                target="_blank"
+                rel="noreferrer noopener"
+                class="article-link"
+              >
+                <p class="article-text"><span>Read -></span></p>
+              </a>
+            </div>
+          </main>
+        </section>
+      </main>
+    </section>
+    <section class="home-section16">
+      <header class="home-header12">
+        <span class="section-head">FAQ</span>
+        <h2 class="home-heading16 section-heading">
+          Frequently asked questions
+        </h2>
+      </header>
+      <main class="home-accordion">
+        <div class="faq-accordion faq-root-class-name">
+          <div
+            data-role="accordion-container"
+            class="faq-element accordion-element"
+          >
+            <div class="faq-details">
+              <span class="faq-text">
+                What is sit amet, consectetur adipiscing elit, sed do?
+              </span>
+              <span data-role="accordion-content" class="faq-text01">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id.
+              </span>
+            </div>
+            <div data-role="accordion-icon">
+              <svg viewBox="0 0 1024 1024" class="faq-icon">
+                <path
+                  d="M366 708l196-196-196-196 60-60 256 256-256 256z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div
+            data-role="accordion-container"
+            class="faq-element1 accordion-element"
+          >
+            <div class="faq-details1">
+              <span class="faq-text02">
+                We&apos;ll update amet, consectetur adipiscing elit until
+                you&apos;re 100% happy.
+              </span>
+              <span data-role="accordion-content" class="faq-text03">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id.
+              </span>
+            </div>
+            <div data-role="accordion-icon">
+              <svg viewBox="0 0 1024 1024" class="faq-icon02">
+                <path
+                  d="M366 708l196-196-196-196 60-60 256 256-256 256z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div
+            data-role="accordion-container"
+            class="faq-element2 accordion-element"
+          >
+            <div class="faq-details2">
+              <span class="faq-text04">
+                Is it really sit amet, consectetur adipiscing elit, sed do?
+              </span>
+              <span data-role="accordion-content" class="faq-text05">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id.
+              </span>
+            </div>
+            <div data-role="accordion-icon">
+              <svg viewBox="0 0 1024 1024" class="faq-icon04">
+                <path
+                  d="M366 708l196-196-196-196 60-60 256 256-256 256z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div
+            data-role="accordion-container"
+            class="faq-element3 accordion-element"
+          >
+            <div class="faq-details3">
+              <span class="faq-text06">
+                We work, what is sit amet, consectetur adipiscing elit, sed do
+                sint occaecat cupidatat non proident
+              </span>
+              <span data-role="accordion-content" class="faq-text07">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id.
+              </span>
+            </div>
+            <div data-role="accordion-icon">
+              <svg viewBox="0 0 1024 1024" class="faq-icon06">
+                <path
+                  d="M366 708l196-196-196-196 60-60 256 256-256 256z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div
+            data-role="accordion-container"
+            class="faq-element4 accordion-element"
+          >
+            <div class="faq-details4">
+              <span class="faq-text08">
+                What is sit amet, consectetur adipiscing elit, sed do?
+              </span>
+              <span data-role="accordion-content" class="faq-text09">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id.
+              </span>
+            </div>
+            <div data-role="accordion-icon">
+              <svg viewBox="0 0 1024 1024" class="faq-icon08">
+                <path
+                  d="M366 708l196-196-196-196 60-60 256 256-256 256z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div
+            data-role="accordion-container"
+            class="faq-element5 accordion-element"
+          >
+            <div class="faq-details5">
+              <span class="faq-text10">
+                Amet, consectetur adipiscing elit mollit anim id est laborum.
+              </span>
+              <span data-role="accordion-content" class="faq-text11">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id.
+              </span>
+            </div>
+            <div data-role="accordion-icon">
+              <svg viewBox="0 0 1024 1024" class="faq-icon10">
+                <path
+                  d="M366 708l196-196-196-196 60-60 256 256-256 256z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <section class="home-section18">
+      <main class="home-content5">
+        <header class="home-header13">
+          <h2 class="home-heading17 section-heading">
+            Stop searching online for medications and use Planical app!
+          </h2>
+          <div class="home-buttons2">
+            <div class="home-ios button">
+              <img alt="image" src="/apple-200w.png" class="home-icon" />
+              <span class="home-text40">Download for iOS</span>
+            </div>
+            <div class="home-android button">
+              <img alt="image" src="/android-200h.png" class="home-icon1" />
+              <span class="home-text41">Download for Android</span>
+            </div>
+          </div>
+        </header>
+        <img alt="image" src="/group%201505-1200w.png" class="home-image15" />
+      </main>
+    </section>
+    <footer class="home-footer">
+      <div class="home-content6">
+        <main class="home-main-content">
+          <div class="home-content7">
+            <header class="home-main4">
+              <div class="home-header14">
+                <img
+                  alt="image"
+                  src="/planical7012-ttpb.svg"
+                  class="home-branding"
+                />
+                <span class="home-text42">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </span>
+              </div>
+              <div class="home-socials">
+                <a
+                  href="https://example.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-link"
+                >
+                  <img alt="image" src="/linkedin-200h.png" class="social" />
+                </a>
+                <a
+                  href="https://example.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-link1"
+                >
+                  <img alt="image" src="/instagram-200h.png" class="social" />
+                </a>
+                <a
+                  href="https://example.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-link2"
+                >
+                  <img alt="image" src="/twitter-200h.png" class="social" />
+                </a>
+              </div>
+            </header>
+            <header class="home-categories">
+              <div class="home-category">
+                <div class="home-header15">
+                  <span class="footer-header">Solutions</span>
+                </div>
+                <div class="home-links">
+                  <span class="footer-link">Responsive Web Design</span>
+                  <span class="footer-link">Responsive Prototypes</span>
+                  <span class="footer-link">Design to Code</span>
+                  <span class="footer-link">Static Website Builder</span>
+                  <span class="footer-link">Static Website Generator</span>
+                </div>
+              </div>
+              <div class="home-category1">
+                <div class="home-header16">
+                  <span class="footer-header">Company</span>
+                </div>
+                <div class="home-links1">
+                  <span class="footer-link">About</span>
+                  <span class="footer-link">Team</span>
+                  <span class="footer-link">News</span>
+                  <span class="footer-link">Partners</span>
+                  <span class="footer-link">Careers</span>
+                  <span class="footer-link">Press &amp; Media</span>
+                </div>
+              </div>
+            </header>
+          </div>
+          <section class="home-copyright">
+            <span class="home-text56">
+              © 2022 latitude. All Rights Reserved.
+            </span>
+          </section>
+        </main>
+        <main class="home-subscribe">
+          <main class="home-main5">
+            <h1 class="home-heading18">Subscribe to our newsletter</h1>
+            <div class="home-input-field">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="home-textinput input"
+              />
+              <div class="home-buy3 button">
+                <span class="home-text57">-&gt;</span>
+                <span class="home-text58">
+                  <span>Subscribe now</span>
+                  <br />
+                </span>
+              </div>
+            </div>
+          </main>
+          <h1 class="home-notice">
+            By subscribing to our newsletter you agree with our Terms and
+            Conditions.
+          </h1>
+        </main>
+        <section class="home-copyright1">
+          <span class="home-text61">© 2022 latitude. All Rights Reserved.</span>
+        </section>
+      </div>
+    </footer>
+    <div>
+      <div class="home-container5">
+        <script>
+              /*
+          Accordion - Code Embed
+          */
+
+          /* listenForUrlChangesAccordion() makes sure that if you changes pages inside your app,
+          the Accordions will still work*/
+
+          const listenForUrlChangesAccordion = () => {
+                let url = location.href;
+                document.body.addEventListener(
+                  'click',
+                  () => {
+                    requestAnimationFrame(() => {
+                      if (url !== location.href) {
+                        runAccordionCodeEmbed();
+                        url = location.href;
+                      }
+                    });
+                  },
+                  true
+                );
+              };
+
+
+          const runAccordionCodeEmbed = () => {
+              const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
+              const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
+              const accordionIcons = document.querySelectorAll('[data-role='accordion-icon']'); // All accordion icons
+
+              accordionContents.forEach((accordionContent) => {
+                  accordionContent.style.display = 'none'; //Hides all accordion contents
+              });
+
+              accordionContainers.forEach((accordionContainer, index) => {
+                  accordionContainer.addEventListener('click', () => {
+                      accordionContents.forEach((accordionContent) => {
+                      accordionContent.style.display = 'none'; //Hides all accordion contents
+                      });
+
+                      accordionIcons.forEach((accordionIcon) => {
+                          accordionIcon.style.transform = 'rotate(0deg)'; // Resets all icon transforms to 0deg (default)
+                      });
+
+                      accordionContents[index].style.display = 'flex'; // Shows accordion content
+                      accordionIcons[index].style.transform = 'rotate(180deg)'; // Rotates accordion icon 180deg
+                  });
+              });
+          }
+
+          runAccordionCodeEmbed()
+          listenForUrlChangesAccordion()
+
+          /*
+          Here's what the above is doing:
+              1. Selects all accordion containers, contents, and icons
+              2. Hides all accordion contents
+              3. Adds an event listener to each accordion container
+              4. When an accordion container is clicked, it:
+                  - Hides all accordion contents
+                  - Resets all icon transforms to 0deg (default)
+                  - Checks if this container has class 'accordion-open'
+                      - If it does, it removes class 'accordion-open'
+                      - If it doesn't, it:
+                          - Removes class 'accordion-open' from all containers
+                          - Adds class 'accordion-open' to this container
+                          - Shows accordion content
+                          - Rotates accordion icon 180deg
+          */
+        </script>
+      </div>
+    </div>
+  </div>
+</div>
