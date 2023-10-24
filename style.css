@@ -20,7 +20,7 @@ body {
   line-height: 100%;
   margin: 0;
   
-  width: 70%;
+  width: 100%;
   color: rgb(182, 182, 182, 0.2);
   background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
   -webkit-background-clip: text;
