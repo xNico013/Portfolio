@@ -1,3 +1,21 @@
+var ang = 0;
+
+$("#prev").click(function(){
+	ang = ang + 22.5;
+  $("*").css("--ang", ang);
+});
+
+$("#next").click(function(){
+	ang = ang - 22.5;
+  $("*").css("--ang", ang);
+});
+
+
+
+
+
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 const textElements = gsap.utils.toArray('.text');
@@ -14,3 +32,30 @@ textElements.forEach(text => {
     },
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
